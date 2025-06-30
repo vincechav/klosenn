@@ -1,0 +1,118 @@
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: #e2cb9f;
+    background-color: #2b749d;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+h1, h2 {
+    color: #FFCC66;
+    background-color: #003366;
+    margin: 25px 0 15px;
+    padding: 12px 15px;
+    border-left: 5px solid #FFCC66; /* Accent gauche */
+    border-bottom: 2px solid #FFCC66; /* Ligne de titre */
+    font-weight: normal;
+    letter-spacing: 1px; /* Espacement vintage */
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #003366;
+    /* Suppression totale de toute bordure pointillée */
+    border: none; 
+    box-shadow: none;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+a {
+    color: #e2cb9f;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.whale-triptych {
+    display: flex;
+    background: #002244;
+    padding: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    max-width: fit-content;
+}
+
+.whale-triptych img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin: 0;
+    background: transparent;
+    border-right: 1px solid #003366;
+}
+
+
+.whale-triptych img:last-child {
+    border-right: none;
+}
+
+
+.whale-triptych img:nth-child(1) {
+    transform: rotate(180deg);
+}
+.whale-triptych img:nth-child(3) {
+    transform: rotate(90deg);
+}
+
+
+.cormorans {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 40px auto;
+    /* Suppression de toutes les bordures */
+    background: #002244;
+    padding: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1, h2 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .whale-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .whale-gallery img {
+        max-width: 80%;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+p {
+    margin: 15px 0;
+    text-align: justify;
+}
