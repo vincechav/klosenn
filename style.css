@@ -14,10 +14,10 @@ h1, h2 {
     background-color: #003366;
     margin: 25px 0 15px;
     padding: 12px 15px;
-    border-left: 5px solid #FFCC66; /* Accent gauche */
-    border-bottom: 2px solid #FFCC66; /* Ligne de titre */
+    border-left: 5px solid #FFCC66;
+    border-bottom: 2px solid #FFCC66;
     font-weight: normal;
-    letter-spacing: 1px; /* Espacement vintage */
+    letter-spacing: 1px; 
 }
 
 .container {
@@ -25,7 +25,7 @@ h1, h2 {
     margin: 20px auto;
     padding: 20px;
     background-color: #003366;
-    /* Suppression totale de toute bordure pointillée */
+
     border: none; 
     box-shadow: none;
 }
@@ -45,55 +45,33 @@ a:hover {
     text-decoration: none;
 }
 
-
-.whale-triptych {
+.whale-gallery {
     display: flex;
-    background: #002244;
-    padding: 10px;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-    margin: 20px auto;
-    max-width: fit-content;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+    margin: 30px 0;
+    padding: 0;
+    background-color: #002244;
+    border: 8px solid #002244;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
-.whale-triptych img {
-    width: 220px;
-    height: 220px; 
+.whale-gallery img {
+    width: calc(33.333% - 0px);
+    height: 180px;
     object-fit: cover;
-    margin: 0; 
-    border: 3px solid #001a33;
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
 }
 
-.whale-triptych img:last-child {
-    border-right: 3px solid #001a33;
-}
-
-.whale-triptych img:nth-child(1) {
-    transform: rotate(180deg);
-}
-.whale-triptych img:nth-child(3) {
-    transform: rotate(90deg);
-}
-
-@media screen and (max-width: 768px) {
-    .whale-triptych {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    
-    .whale-triptych img {
-        width: 100%; 
-        margin-bottom: 0; 
-    }
-}
 
 .cormorans {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 40px auto;
-    /* Suppression de toutes les bordures */
     background: #002244;
     padding: 5px;
 }
@@ -114,9 +92,9 @@ a:hover {
         align-items: center;
     }
 
-    .whale-gallery img {
-        max-width: 80%;
-        margin-bottom: 10px;
+   .whale-gallery img {
+        width: 100%; 
+        margin-bottom: 0;
     }
 }
 
@@ -125,8 +103,4 @@ a:hover {
 p {
     margin: 15px 0;
     text-align: justify;
-
 }
-
-
-
